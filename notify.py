@@ -11,7 +11,7 @@ pynotify.init(sys.argv[0])
 print(sys.argv[0])
 
 
-proxy = urllib2.ProxyHandler({'http': 'http://k.adarsh:boobs@202.141.80.20:3128'})
+proxy = urllib2.ProxyHandler({'http': 'http://username:passwd@125.13.23.25:port'})
 auth = urllib2.HTTPBasicAuthHandler()
 opener = urllib2.build_opener(proxy, auth, urllib2.HTTPHandler)
 urllib2.install_opener(opener)
